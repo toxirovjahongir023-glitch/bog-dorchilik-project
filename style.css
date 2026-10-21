@@ -1306,3 +1306,382 @@ header {
 .success-modal p:last-child {
   margin-bottom: 0;
 }
+
+.connnect{
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* =========================================
+   PREMIUM DESIGN UPGRADE
+   Eski CSS kodiga tegmasdan qo'shiladi
+========================================= */
+
+/* Silliq scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Umumiy ko'rinish */
+body {
+    color: #282828;
+    background-color: #ffffff;
+}
+
+/* HEADER */
+header {
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.025);
+}
+
+.navbar ul li {
+    transition: transform 0.3s ease;
+}
+
+.navbar ul li a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 0;
+    height: 2px;
+    background: #339933;
+    transition: width 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #339933;
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+.navbar ul li:hover {
+    transform: translateY(-3px);
+}
+
+/* HERO SECTION */
+#section {
+    background-position: center;
+    background-size: cover;
+}
+
+.hero h1 {
+    text-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
+    line-height: 1.12;
+}
+
+.hero button {
+    box-shadow: 0 8px 22px rgba(51, 153, 51, 0.22);
+}
+
+.hero button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+/* SECTION SARLAVHALARI */
+.spawn h1,
+.connect,
+.korzina h1 {
+    letter-spacing: -1.5px;
+}
+
+.spawn button {
+    transition: all 0.3s ease;
+}
+
+.spawn button:hover {
+    border-color: #339933;
+    background: #f0f9f0;
+    transform: translateY(-2px);
+}
+
+.spawn button a {
+    transition: color 0.3s ease;
+}
+
+.spawn button:hover a {
+    color: #238323;
+}
+
+/* UMUMIY CARDLAR */
+.card,
+.quti,
+.add1,
+.add2 {
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.025);
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.card:hover,
+.quti:hover,
+.add1:hover,
+.add2:hover {
+    border-color: #d5ead5;
+    box-shadow: 0 16px 35px rgba(30, 80, 30, 0.10);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.quti:hover,
+.add1:hover,
+.add2:hover {
+    transform: translateY(-7px);
+}
+
+/* CARD RASMLARI */
+.card img,
+.quti img,
+.add1 img,
+.add2 img {
+    transition: transform 0.4s ease;
+}
+
+.card:hover img,
+.quti:hover img {
+    /* transform: scale(1.025); */
+}
+
+/* CHEGIRMA BADGE */
+.discount,
+.discount1,
+.discount3 {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    font-weight: 700;
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.discount:hover,
+.discount1:hover,
+.discount3:hover {
+    background-color: #e53935;
+    transform: scale(1.06);
+}
+
+/* NARXLAR */
+.cost h1,
+.add1 div h1,
+.cost1 h1,
+.p-card__price--current,
+.price-current {
+    letter-spacing: -1px;
+}
+
+/* ASOSIY YASHIL TUGMALAR */
+.hero button,
+.korzina button,
+.order-btn,
+.p-card__cart-btn,
+.add1 button,
+.tugma {
+    transition:
+        background-color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+.order-btn:hover,
+.p-card__cart-btn:hover,
+.add1 button:hover,
+.tugma:hover {
+    box-shadow: 0 7px 18px rgba(46, 155, 61, 0.20);
+}
+
+/* BUYURTMA BLOKI */
+.order {
+    background: linear-gradient(135deg, #087b2c 0%, #0b590e 100%);
+    box-shadow: 0 16px 40px rgba(11, 113, 11, 0.12);
+}
+
+.order h1 {
+    letter-spacing: -1px;
+}
+
+.input {
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.input:focus {
+    border-color: #c9f7c9;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.10);
+}
+
+/* FILTRLAR */
+.filter-input,
+.filter-select {
+    transition: all 0.25s ease;
+}
+
+.filter-input:focus,
+.filter-select:focus {
+    border-color: #339933;
+    box-shadow: 0 0 0 4px rgba(51, 153, 51, 0.10);
+}
+
+/* MAHSULOT TAFSILOTI */
+.p-card {
+    border-radius: 20px;
+}
+
+.p-card__img {
+    transition: transform 0.4s ease;
+}
+
+.p-card__media:hover .p-card__img {
+    transform: scale(1.035);
+}
+
+.p-card__cart-btn:hover {
+    background-color: #237b31;
+}
+
+/* SAVAT */
+.cart-container {
+    animation: premiumFade 0.6s ease both;
+}
+
+.cart-item {
+    border-color: #ededed;
+    border-radius: 14px;
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+.cart-item:hover {
+    border-color: #cfe5cf;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.045);
+}
+
+.order-details {
+    border: 1px solid #eeeeee;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.035);
+}
+
+.form-input {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #339933;
+    box-shadow: 0 0 0 4px rgba(51, 153, 51, 0.08);
+}
+
+/* INFO KARTALARI */
+.info1,
+.info2 {
+    border: 1px solid transparent;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.info1:hover,
+.info2:hover {
+    border-color: #e1eee1;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.055);
+    transform: translateY(-5px);
+}
+
+/* XARITA */
+.map-wrapper {
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+.map-image {
+    transition: transform 0.5s ease;
+}
+
+.map-link:hover .map-image {
+    transform: scale(1.04);
+}
+
+.map-overlay {
+    backdrop-filter: blur(2px);
+}
+
+/* MODAL */
+.success-modal {
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.25);
+    animation: premiumModal 0.35s ease both;
+}
+
+/* UMUMIY ANIMATSIYALAR */
+@keyframes premiumFade {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes premiumModal {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* TELEFONDA HOVER EFFEKTINI YENGILLASHTIRISH */
+@media (max-width: 600px) {
+    .card:hover,
+    .quti:hover,
+    .add1:hover,
+    .add2:hover,
+    .info1:hover,
+    .info2:hover {
+        transform: translateY(-3px);
+    }
+
+    .spawn h1,
+    .connect,
+    .korzina h1 {
+        letter-spacing: -0.8px;
+    }
+}
+
+/* Harakatni kamaytirish sozlamasi */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
